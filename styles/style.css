@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+}
+:root{
+    --bg-primary: #1A0B2E;
+    --bg-secondary: #230E3D;
+    --btn-secondary: #00FF88;
+    --linear-first: #F7E93F;
+    --linear-second: #FB09B4;
+    --linear-third: #9100F8;
+    --text-primary: #FFFFFF;
+}
+body{
+    background-color: var(--bg-primary);
+}
+#navbar{
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation{
+    display: flex;
+    gap: 32px;
+}
+
+.navigation a{
+    color: var(--text-primary);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.hamburger-menu{
+    display: none;
+    cursor: pointer;
+}
+
+#banner{
+    background: url(../assets/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.banner-img-container{
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner-img-container img{
+    width: 100%;
+}
+
+.banner-img-container .mic-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.banner-img-container .badge{
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    padding: 8px 16px;
+    background-color: var(--btn-secondary);
+    color: var(--bg-primary);
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 9999px;
+    border: none;
+    outline: none;
+}
+
+.banner-content{
+    margin-bottom: 100px;
+}
+
+.banner-title{
+        margin-top: 40px;
+        color: var(--text-primary);
+        font-size: 3.75rem;
+}
+.banner-title span{
+        display: inline-block;
+        animation: bounce 1s ease infinite;
+}
+.banner-title span:nth-child(2){
+        animation-delay: 0.1s;
+}
+.banner-title span:nth-child(3){
+        animation-delay: 0.2s;
+}
+.banner-title span:nth-child(4){
+        animation-delay: 0.3s;
+}
+.banner-title span:nth-child(5){
+        animation-delay: 0.4s;
+}
+.banner-title span:nth-child(6){
+        animation-delay: 0.5s;
+}
+.banner-title span:nth-child(7){
+        animation-delay: 0.6s;
+}
