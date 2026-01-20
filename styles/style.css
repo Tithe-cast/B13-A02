@@ -471,8 +471,8 @@ hr{
     .about-card-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px; /* spacing between cards */
-    padding-bottom: 60px; /* optional reduced padding */
+    gap: 20px; 
+    padding-bottom: 60px; 
   }
 
   .about-card {
@@ -480,16 +480,16 @@ hr{
   }
 
   #about .section-content .section-description {
-    padding: 0 10%; /* reduce side padding for smaller screens */
+    padding: 0 10%; 
   }
     .why-choose-card-container {
-    display: block; /* stack cards vertically */
+    display: block; 
   }
 
   .why-choose-card-container .why-choose-card {
-    grid-column: auto; /* reset any spanning */
-    grid-row: auto;    /* reset any spanning */
-    margin-bottom: 20px; /* spacing between cards */
+    grid-column: auto; 
+    grid-row: auto;    
+    margin-bottom: 20px; 
   }
     
      .episodes-card-container{
@@ -531,6 +531,117 @@ hr{
         padding: 0 80px;
         flex-wrap: wrap;
 }
+}
+/* Medium Devices: 576px to 992px */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  #navbar .logo-header img {
+    max-width: 150px;
+  }
+
+  #navbar .navigation {
+    gap: 20px;
+  }
+
+  #banner .banner-title {
+    font-size: 3rem;
+  }
+
+  #banner .section-description {
+    max-width: 85%;
+    margin: 0 auto 30px;
+  }
+
+  .about-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding-bottom: 80px;
+  }
+
+  .why-choose-card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .episodes-card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .episodes-card {
+    width: 48%;
+  }
+
+  .host-card {
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+  }
+
+  .card-content .social-links {
+    justify-content: flex-start;
+  }
+}
+
+/* Large Devices: above 992px */
+@media screen and (min-width: 992px) {
+  .container {
+    width: 75%;
+  }
+
+  .section-title {
+    font-size: 3rem;
+  }
+
+  #navbar .logo-header img {
+    max-width: 180px;
+  }
+
+  #navbar .navigation {
+    display: flex;
+    gap: 32px;
+  }
+
+  .about-card-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .why-choose-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .episodes-card-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: nowrap;
+  }
+
+  .episodes-card {
+    width: auto;
+  }
+
+  .host-card {
+    flex-direction: row;
+    gap: 24px;
+    text-align: left;
+  }
+
+  .card-content .social-links {
+    justify-content: flex-start;
+  }
 }
 
 
